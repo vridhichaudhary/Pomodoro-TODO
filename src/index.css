@@ -1,28 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .main {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
 }
 
 .overlay {
@@ -33,3 +25,61 @@ video {
   height: 100%;
   background-color: rgba(0,0,0,0.5);
 }
+
+.content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
+}
+
+hr {
+  width: 80%;
+  height: 4px;
+  background-color: white;
+  border: none;
+  margin: 20px auto;
+}
+
+.timer {
+  font-size: 6em;
+  font-weight: bold;
+  color: white;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover{
+  transform: translateY(-5px);
+}
+
+
+
+
+
